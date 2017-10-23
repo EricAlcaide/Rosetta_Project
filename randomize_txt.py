@@ -1,6 +1,6 @@
 # Reading is cool.
 # Here is how to open, randomize, and print out random lines from your favorite book.
-# Built as a tiny part of my Twitter bot. Thanks to the many good souls on SO for contributing.
+# Tiny part of my Twitter bot w/o SO's help.
 
 import random
 
