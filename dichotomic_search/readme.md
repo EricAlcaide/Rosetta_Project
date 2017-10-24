@@ -15,7 +15,3 @@ Find a value inside an ordered array.
 [1,2,3,5,6,10,15] 4 >> null
 
 [1,2,3,5,6,10,15] 3 >> 3
-
-["I","am","a","test","for","Roseta","Stone","algo","lib"] "HELLO" >> null
-
-["I","am","a","test","for","Roseta","Stone","algo","lib"] "Stone" >> "Stone"
