@@ -2,5 +2,6 @@
 # -*- coding: utf-8 -*-
 # Python 2 version
 
+print("Enter a value:"),
 read = raw_input()
-print("You say: \"{}\"".format(read))
+print("You entered: \"{}\"".format(read))
