@@ -10,7 +10,7 @@ Two players (numbered 1 and 2) are playing a game with ```n``` stones. Player 1 
 
 Given the number of stones, find and print the name of the winner (i.e.,  or ) on a new line. Each player plays optimally, meaning they will not make a move that causes them to lose the game if some better, winning move exists.
 
-#### Aditional Info
+#### Additional Info
 
 If ```n = 10``` , **P1** can remove either 2 or 3 stones to win the game, so we print ```First``` on a new line. Recall that each player moves optimally, so **P1** will not remove 5 stones because doing so would cause **P1** to lose the game.
 
