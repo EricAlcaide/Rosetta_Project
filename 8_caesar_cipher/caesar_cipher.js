@@ -1,38 +1,22 @@
-function _makeAlphabet() {
-    const lower = 97;
-    const upper = 122;
-
-    return Array.apply(null, {length: upper - lower + 1}).map(
-        Function.call,
-        i => String.fromCharCode(i + lower)
-    ).filter(_isAlpha).join('');
-}
-
-function _isAlpha(letter) {
-    return /[a-zA-Z]/.test(letter);
-}
-
 function caesar(plain, shift) {
-    const alphabet = _makeAlphabet();
-
     return plain.split('').reduce((acc, letter) => {
-        if (!_isAlpha(letter)) {
+        if (!/[a-zA-Z]/.test(letter)) {
             return acc + letter;
         }
 
         const letterLower = letter.toLowerCase();
-        const idx = alphabet.indexOf(letterLower);
-        let newIdx = idx + shift % (alphabet.length - 1);
+        const idx = letterLower.charCodeAt();
+        let newIdx = (idx + shift - 97) % 26;
 
         if (newIdx < 0) {
-            newIdx = alphabet.length + newIdx
+            newIdx = 26 + newIdx
         }
 
-        if (newIdx >= alphabet.length) {
+        if (newIdx > 25) {
             newIdx = 0
         }
 
-        const newLetter = alphabet[newIdx];
+        const newLetter = String.fromCharCode(newIdx + 97);
         return acc + (letter === letterLower ? newLetter : newLetter.toUpperCase());
     }, '');
 }

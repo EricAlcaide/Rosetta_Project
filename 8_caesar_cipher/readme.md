@@ -9,3 +9,8 @@ More info on the algorithm: https://learncryptography.com/classical-encryption/c
 
 * **Input** Text to be encrypted, shift
 * **Output** Encrypted text
+
+### Examples
+caesar('abcde', shift=3) == 'defgh'
+caesar('A not so long string', shift: 2) == 'C pqv uq nqpi uvtkpi'
+caesar('Negative shift', shift: -1) == 'Mdfzshud rghes'
