@@ -1,0 +1,3 @@
+A cypherpunk is any activist advocating widespread use of strong cryptography and privacy-enhancing technologies as a route to social and political change.
+
+Cypherpunks write code. We know that someone has to write software to defend privacy, and... we're going to write it.

@@ -1,6 +1,8 @@
 // JavaScript code for a hashing practice (Rosetta Stone)
 // Author: Eric Alcaide
 
+// This is a code skeleton. NOT WORKING!
+
 function req_string(){
 	let word = ;
 	return word
