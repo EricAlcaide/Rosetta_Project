@@ -15,7 +15,7 @@ function _isAlpha(letter) {
 function caesar(plain, shift) {
     const alphabet = _makeAlphabet();
 
-    const result = plain.split('').reduce((acc, letter) => {
+    return plain.split('').reduce((acc, letter) => {
         if (!_isAlpha(letter)) {
             return acc + letter;
         }
@@ -28,14 +28,18 @@ function caesar(plain, shift) {
             newIdx = alphabet.length + newIdx
         }
 
+        if (newIdx >= alphabet.length) {
+            newIdx = 0
+        }
+
         const newLetter = alphabet[newIdx];
         return acc + (letter === letterLower ? newLetter : newLetter.toUpperCase());
     }, '');
-
-    return result;
 }
 
 
+console.assert(caesar('AzaZ', shift=1), 'BabA')
+console.assert(caesar('AzaZ', shift=-1), 'ZyzY')
 console.assert(caesar('This is a caesar cipher example', shift=0) === 'This is a caesar cipher example')
 console.assert(caesar('A not so long string', shift=2) == 'C pqv uq nqpi uvtkpi')
 console.assert(caesar('Negative shift', shift=-1) == 'Mdfzshud rghes')

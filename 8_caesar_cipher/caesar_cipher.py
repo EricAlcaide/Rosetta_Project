@@ -23,6 +23,8 @@ def caesar(plain, shift):
 
 
 def main():
+    assert caesar('AzaZ', shift=1) == 'BabA'
+    assert caesar('AzaZ', shift=-1) == 'ZyzY'
     assert caesar('This is a caesar cipher example', shift=0) == 'This is a caesar cipher example'
     assert caesar('A not so long string', shift=2) == 'C pqv uq nqpi uvtkpi'
     assert caesar('Negative shift', shift=-1) == 'Mdfzshud rghes'
