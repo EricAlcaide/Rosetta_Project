@@ -4,8 +4,9 @@
 
 def fibonacci():
     prev, actual = 0, 1
+    n=int(input("Enter the no. of terms you want in fibbonacci series:"))
     
-    for q in range(10):
+    for q in range(n):
         actual, prev = actual+prev, actual
         print(actual)
 
