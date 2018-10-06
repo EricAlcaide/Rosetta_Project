@@ -26,14 +26,14 @@ int main(int argc, string argv[]) {
         for (int i = 0; i < length; i++) {                          //iterate through string
             if isupper(plaintext[i]) {                              //if it's capital, keep it capital
                 char C = ((((plaintext[i] + k) - 65) % 26) + 65);   
-                printf("%c", C);
+                printf("%c\n", C);
             }
             else if islower(plaintext[i]) {                         //if it's lowercase, keep it that way
                 char c = ((((plaintext[i] + k) - 97) % 26) + 97);   
-                printf("%c", c);
+                printf("%c\n", c);
             }
             else {
-                printf("%c", plaintext[i]);                         //print any other text
+                printf("%c\n", plaintext[i]);                         //print any other text
             }
         }
     }
