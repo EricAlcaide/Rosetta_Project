@@ -1,5 +1,9 @@
-def hello msg
-	puts "Hello, World. #{msg}"
-end
+//in turbo c
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	printf("hello world");
+	getch();
+}	
 
-hello "Hello World"
