@@ -2,15 +2,17 @@
 # Python implementation of the Fibonacci Series
 # Author: Eric Alcaide
 
-def fibonacci():
+def fibonacci(a):
     prev, actual = 0, 1
     
-    for q in range(10):
+    for q in range(a):
         actual, prev = actual+prev, actual
         print(actual)
 
 def main():
-    fibonacci()
+	print("Enter the number upto which to take fibonacci:",end=" ")
+	a=int(input())
+	fibonacci(a)
 
 if __name__ == "__main__":
     main()
