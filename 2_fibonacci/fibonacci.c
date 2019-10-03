@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+/*function that generates the fibonacci series starting from 0,1..*/
+
 void fibonacci(void)
 {
     int prev = 0;
