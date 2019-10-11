@@ -1,4 +1,4 @@
-Numeric Integration
+Numerical Integration
 ======================
 
 ### Three methods useful in numerical analysis implemented in Julia:
