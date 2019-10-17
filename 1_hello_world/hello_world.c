@@ -4,7 +4,7 @@
 
 void hello(char* word)
 {
-    printf("Hello, World.\n");
+    printf("Hello World.\n");
     printf("%s\n", word);
 }
 
