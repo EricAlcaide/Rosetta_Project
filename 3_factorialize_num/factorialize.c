@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
+//takes the number and calculate its factorial
 int factorialize(int n) {
     int result = 1;
 
