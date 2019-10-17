@@ -14,7 +14,7 @@ void fibonacci(void)
         prev = cur;
         cur = n_cur;
 
-        cout<<cur<<" ";
+        cout<<cur<<" "<<endl;
     }
 }
 
