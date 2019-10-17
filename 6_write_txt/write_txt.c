@@ -17,7 +17,7 @@ int ReadFirstLine( void );
 int ReadLastLine( void );
 void WriteLine( char *pszLine );
 
-// Preprocessor defines
+// Preprocessor defines for ease in understanding
 #define BUFFER_SIZE  1024
 #define NEW_LINE       "\n"
 #define DATA_FILE       "data.txt"
