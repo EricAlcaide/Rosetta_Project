@@ -6,6 +6,6 @@ using namespace std;
 
 int main() {
   string hw = "Hello World";
-  cout<<"Hello World. "<<hw;
+  cout<<"Hello World. "<<endl<<hw;
   return 0;
 }
