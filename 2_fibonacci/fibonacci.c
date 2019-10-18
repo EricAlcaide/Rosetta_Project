@@ -13,7 +13,7 @@ void fibonacci(void)
         prev = cur;
         cur = n_cur;
         
-        printf("%d ", cur);
+        printf("%d\n", cur);
     }
     printf("\n");
 }
