@@ -15,6 +15,7 @@ void fibonacci(void)
         
         printf("%d ", cur);
     }
+    printf("\n");
 }
 
 int main(void)
