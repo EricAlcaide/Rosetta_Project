@@ -4,8 +4,15 @@ function factorialize(num) {
  } else if (num <= 1 ) {
   return num;
  } else {
-  return num * factorialize(num - 1);
+  var ans = 1;
+  for(var i=2;i<=num;i+=1) {
+    ans *= i;
+  }
+  return ans;
  }
 }
 
-factorialize(0);
+console.log(factorialize(0));
+console.log(factorialize(1));
+console.log(factorialize(5));
+console.log(factorialize(10));
