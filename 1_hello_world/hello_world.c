@@ -8,9 +8,10 @@ void hello(char* word)
     printf("%s\n", word);
 }
 
-int main(void)
+void main(void)
 {
+ 
     char* word = "Hello, World.";
     hello(word);
-    return 0;
+    
 }
