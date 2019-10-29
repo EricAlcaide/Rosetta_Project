@@ -8,7 +8,7 @@ void fibonacci(void)
     int cur = 1;
     int n_cur;
     
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 100; i++) {
         n_cur = cur + prev;
         prev = cur;
         cur = n_cur;
@@ -18,7 +18,7 @@ void fibonacci(void)
     printf("\n");
 }
 
-int main(void)
+int main()
 {
     fibonacci();
 }
